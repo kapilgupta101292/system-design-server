@@ -1,5 +1,7 @@
 import React from "react";
 import Jumbotron from "react-bootstrap/Jumbotron";
+import Form from "react-bootstrap/Form";
+import FormControl from "react-bootstrap/FormControl";
 import Button from "react-bootstrap/Button";
 import "./Banner.css";
 export default function Banner() {
@@ -25,9 +27,12 @@ export default function Banner() {
           </div>
           <div className="Banner-share">Share:</div>
         </div>
-        <p>
-          <Button variant="primary">Learn more</Button>
-        </p>
+        <div className="Banner-search">
+          <Form inline>
+            <FormControl type="text" placeholder="Search" />
+            <Button variant="outline-success">Search</Button>
+          </Form>
+        </div>
       </Jumbotron>
     </div>
   );
